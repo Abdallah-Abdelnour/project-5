@@ -1,0 +1,171 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: white;
+}
+
+.parent{
+    margin: 20px auto;
+    display: inline-flex;
+    flex-wrap: wrap;
+
+}
+.parent section  h1 {
+    color: #531d51;
+    margin: 20px 40px;
+    font-size: 40px;
+    line-height: 1;
+}
+.parent section  p {
+    color: #444;
+    margin: 0px 30px;
+    font-size: 20px;
+    line-height: 1.3;
+}
+
+.iOne , .trois{
+    padding: 10px;
+    width: calc( calc(100% - 80px) /2);
+    color: white;
+}
+.one , .two , .three{
+    padding: 10px;
+    width: calc( calc(100% - 90px) /3);
+    color: white;
+}
+.t-2{
+    padding-left: 25px;
+}
+.t-3{
+    padding-left: 50px;
+}
+
+.two{
+    position: relative;
+    top: 30px;
+    left: 30px;
+}
+.three{
+    position: relative;
+    top: 60px;
+    left: 60px;
+}
+
+.parent .trois {
+    margin: 10px 15px 10px 30px;
+
+}
+
+.parent .trois div{
+    width: 105%;
+    color: #3e193b;
+    margin: 10px -9px;
+    background-color: #f7f2f8; 
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.parent .trois div h2 {
+    padding: 0px 0px 12px;
+}
+span > i {
+    color: goldenrod;
+}
+i{
+    margin: 15px 6px 10px;
+}
+.parent > div:not(.trois){
+    margin: 10px 5px;
+    background-color: #511f50;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+/*******************************************************/
+.parent > div:not(.trois) > div{
+    display: grid;
+    grid-template-columns: 110px auto;
+    margin: 35px;
+    text-align: left;
+
+}
+.parent  .image {
+
+    width: 30%;
+    height: 30%;
+
+}
+.parent .image img{
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    width: 100%;
+    height: 100%;
+}
+.work{
+    margin: 20px 0px;
+}
+.work h3{
+    font-size: 22px;
+
+}
+.work span{
+    color: #999;
+
+}
+.parent > div:not(.trois) > p{
+    margin: 35px;
+    font-size: 18.6px;
+}
+
+
+@media only screen and (max-width: 425px) {
+
+    .parent > div{
+        padding: 10px;
+        width: calc( calc(100%));
+    }
+    .parent section {
+        padding: 10px;
+        width: calc( calc(100%));
+    }
+    .parent{
+        margin: 20px auto;
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+    }
+    .t-2{
+        padding-left: 0px;
+    }
+    .t-3{
+        padding-left: 0px;
+    }
+    
+    .two{
+        position: relative;
+        top: 0px;
+        left: 0px;
+    }
+    .three{
+        position: relative;
+        top: 0px;
+        left: 0px;
+    }
+    .parent .trois {
+        margin: 10px 15px; 
+    
+    }
+}
